@@ -1,0 +1,31 @@
+// color
+$light: #fff;
+$dark: #000;
+$orange: #f2994a;
+$gray1: #333333;
+$gray2: #4f4f4f;
+$gray3: #828282;
+$gray4: #bdbdbd;
+
+// common scss
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+// media query
+@mixin desktop {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 540px) {
+    @content;
+  }
+}
