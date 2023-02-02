@@ -1,0 +1,24 @@
+// colors ----------
+$dark-1: #bdbdbd;
+$dark-2: #4f4f4f;
+$dark-3: #333333;
+$light: #ffffff;
+
+// media query
+@mixin desktop {
+  @media (max-width: 1180.98px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1024.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768.98px) {
+    @content;
+  }
+}

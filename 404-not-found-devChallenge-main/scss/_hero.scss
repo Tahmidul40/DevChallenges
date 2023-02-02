@@ -1,0 +1,126 @@
+.hero {
+  .container {
+    padding: 40px 77px;
+
+    @include tablet {
+      padding: 20px 1px 20px 24px;
+    }
+  }
+
+  .top {
+    h3 {
+      font-family: "Inconsolata", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: -0.08em;
+      text-align: left;
+      color: $dark-3;
+    }
+  }
+
+  .middle {
+    display: flex;
+    padding: 170px 0 272px;
+
+    @include desktop {
+      align-items: center;
+    }
+
+    @include laptop {
+      flex-direction: column;
+      padding: 120px 0;
+    }
+
+    @include tablet {
+      padding: 64px 0 114px;
+    }
+
+    .img {
+      max-width: 540px;
+
+      @include desktop {
+        max-width: 480px;
+      }
+
+      @include laptop {
+        padding-bottom: 60px;
+      }
+    }
+
+    .title {
+      padding-left: 70px;
+
+      @include laptop {
+        padding-left: 0;
+      }
+
+      h1 {
+        font-family: "Space Mono", sans-serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95px;
+        letter-spacing: -0.035em;
+        text-align: left;
+        color: $dark-3;
+
+        @include desktop {
+          font-size: 3rem;
+          line-height: 80px;
+        }
+
+        @include tablet {
+          line-height: 71px;
+          letter-spacing: -0.035em;
+        }
+      }
+
+      p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        text-align: left;
+        max-width: 380px;
+        color: $dark-2;
+        margin-bottom: 64px;
+
+        @include tablet {
+          font-size: 18px;
+          line-height: 27px;
+          letter-spacing: -0.035em;
+        }
+      }
+
+      button {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        text-align: left;
+        color: $light;
+        padding: 24px 43px 23px;
+        background-color: $dark-3;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  .end {
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $dark-1;
+    }
+  }
+}
